@@ -1,12 +1,10 @@
-console.log('hello, world!');
-
 const express = require('express')
 const app = express()
 
 const discData = require('./data.js');
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send('Hello World! Go to /discs to look at some data')
 })
 app.get('/discs', (req, res) => {
     res.json(discData)
