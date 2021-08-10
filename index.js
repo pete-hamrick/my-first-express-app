@@ -7,9 +7,9 @@ const port = process.env.PORT || 3000
 app.get('/', (req, res) => {
     res.send('Hello World!')
 })
-app.get('/puppies', (req, res) => {
+app.get('/cats', (req, res) => {
     console.log(req.query);
-    res.send(`Puppies are cute, especially ${req.query.name}!`)
+    res.send(`Cats are cute, especially ${req.query.name}!`)
 })
 
 app.listen(port, () => {
